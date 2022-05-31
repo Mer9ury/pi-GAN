@@ -4,3 +4,5 @@ celebAOutputDir/
 *.pyc
 *.png
 output/
+EvalImages/
+debug/
