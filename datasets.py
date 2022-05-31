@@ -43,8 +43,10 @@ class CelebA(Dataset):
             X = self.transform_flip(X)
             pose = self.pose[index]
             pose[0] = math.pi - pose[0]
-        return X, pose
+        
+        pose = pose.type(torch.FloatTensor)
 
+        return X, pose
 class Cats(Dataset):
     """Cats Dataset"""
 
